@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
     /* padding: 0px; */
-    margin: 0px;
-    
+    margin: 0px;  
 }
 
 body{
@@ -14,7 +13,7 @@ body{
 
 .container{
     background-color: rgb(29, 29, 224, 0.5);
-    width: 80%;
+    width: 60%;
     margin: auto;
-    padding: 30px 20px;
+    padding: 70px 50px;
 }
