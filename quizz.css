@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 50%;
+    margin: auto;
+}
+
+.success{
+    height: 100px;
+    color: green;
+    border: 1px dashed green;
+    padding: 10px 50px;
+}
+
+.error{
+    height: 100px;
+    color: red;
+    border: 1px dashed red;
+    padding: 10px 50px;
+}
