@@ -14,11 +14,16 @@
     <hr />
     <main>
       <div class="container">
-        <form action="todo.html">
+        <form autocomplete="off" id="add-task">
           <h1>Add To your Task List</h1>
           <div class="text">
             <label for="task">Enter the task: </label> <br />
-            <input type="text" name="task" id="task" />
+            <input
+              type="text"
+              name="task"
+              id="task"
+              placeholder="Enter your task..."
+            />
             <input type="submit" value="Save Task" />
           </div>
         </form>
