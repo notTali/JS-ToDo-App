@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo List</title>
     <link rel="stylesheet" href="todo.css" />
+    <title>TO-DO List</title>
   </head>
   <body>
-    <div class="container">
-      <div class="tittle">To do</div>
-      <div id="header">
-        <div class="input-container">
-          <input
-            autocomplete="off"
-            type="text"
-            placeholder="Tittle"
-            id="todo-input"
-          />
-          <label for="name" class="form__label">Task Label</label>
-        </div>
-        <button id="todo-add-btn">Add</button>
+    <header>
+      <h1>My To-DO List</h1>
+    </header>
+    <hr />
+    <main>
+      <div class="container">
+        <form action="todo.html">
+          <h1>Add To your Task List</h1>
+          <div class="text">
+            <label for="task">Enter the task: </label> <br />
+            <input type="text" name="task" id="task" />
+            <input type="submit" value="Save Task" />
+          </div>
+        </form>
+
+        <h1>You have <span>0</span> Tasks</h1>
+        <ul class="all-tasks"></ul>
       </div>
-    </div>
+    </main>
+    <script src="todo.js"></script>
   </body>
 </html>
