@@ -33,11 +33,17 @@ addTaskForm.addEventListener( 'submit', (event) => {
          const input = document.createElement("input");
          input.type = "checkbox";
          input.id = "do" + index;
-     
+
          // Task content (as a label)
          const taskContent = document.createElement("label");
          taskContent.innerText = task;
          taskContent.htmlFor = "do" + index;
+
+         input.addEventListener("click", event => {
+            if (input.checked == true){
+                   taskContent.style.textDecorationLine = "line-through";
+            }
+        });
 
          const icon = document.createElement("i");
          icon.classList.add("fa", "fa-trash");
