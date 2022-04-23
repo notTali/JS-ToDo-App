@@ -9,5 +9,5 @@ para.forEach( par => {
         par.classList.add("success");
     }
 
-    console.log(par);
+    // console.log(par);
 });
