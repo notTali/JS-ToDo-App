@@ -65,54 +65,6 @@ const addTask = (aTask) => {
     
 };
 
-
-// let userTask = document.getElementById("task");
-
-// console.log(userTask.value);
-// const ul = document.querySelector(".all-tasks");
-
-
-
-
-
-
-// console.log(ul);
-
-// const displayTask = () => {
-//     tasks.forEach( task => {
-    
-//         // Task list item.
-//         const li = document.createElement("li");
-        
-//         // Createa form 
-//         const form = document.createElement("form");
-//         form.classList.add("list-container");
-        
-//         // create a form input field of type checkbox.
-//         const input = document.createElement("input");
-//         input.type = "checkbox";
-//         input.name = "do";
-    
-//         // Task content (as a label)
-//         const taskContent = document.createElement("label");
-//         taskContent.innerText = task;
-    
-//         // Taks form content.
-//         form.appendChild(input);
-//         form.appendChild(taskContent);
-        
-//         // Add the form to the list
-//         li.appendChild(form);
-    
-//         // Display the list in the ul tag
-//         ul.appendChild(li)
-    
-//     });
-// };
-
-// displayTask();
-
-
-
-
-
+const deleteTask = (aTask) => {
+    tasks
+};
