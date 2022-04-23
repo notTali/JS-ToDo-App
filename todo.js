@@ -41,6 +41,11 @@ addTaskForm.addEventListener( 'submit', (event) => {
 
          const icon = document.createElement("i");
          icon.classList.add("fa", "fa-trash");
+
+         icon.addEventListener("click",(event) => {
+             tasks.splice(index-1); //Remove task from list
+             ul.removeChild(li); // Remove list item.
+         });
      
          // Taks form content.
          form.appendChild(input);
