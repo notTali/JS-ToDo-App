@@ -42,6 +42,8 @@ addTaskForm.addEventListener( 'submit', (event) => {
          input.addEventListener("click", event => {
             if (input.checked == true){
                    taskContent.style.textDecorationLine = "line-through";
+            }else{
+                taskContent.style.textDecorationLine = "none";
             }
         });
 
