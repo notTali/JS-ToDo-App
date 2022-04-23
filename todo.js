@@ -17,7 +17,7 @@ addTaskForm.addEventListener( 'submit', (event) => {
         // console.log(task);
         addTask(task);
 
-
+        const index = tasks.length;
 
         // console.log(userTask.value);
         const ul = document.querySelector(".all-tasks");
@@ -32,12 +32,12 @@ addTaskForm.addEventListener( 'submit', (event) => {
          // create a form input field of type checkbox.
          const input = document.createElement("input");
          input.type = "checkbox";
-         input.id = "do";
+         input.id = "do" + index;
      
          // Task content (as a label)
          const taskContent = document.createElement("label");
          taskContent.innerText = task;
-         taskContent.htmlFor = "do";
+         taskContent.htmlFor = "do" + index;
 
          const icon = document.createElement("i");
          icon.classList.add("fa", "fa-trash");
