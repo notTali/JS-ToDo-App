@@ -2,6 +2,8 @@ const tasks = [
 
 ];
 
+
+
 // Form submit event lister
 const addTaskForm = document.getElementById("add-task");
 // console.log(addTaskForm);
@@ -46,6 +48,9 @@ addTaskForm.addEventListener( 'submit', (event) => {
          // Display the list in the ul tag
          ul.appendChild(li)
 
+         // Display the  number of tasks...
+        const span = document.querySelector("span");
+        span.innerText = tasks.length;
 
 
     } else {
