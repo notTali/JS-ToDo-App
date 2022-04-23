@@ -12,8 +12,32 @@ body{
 }
 
 .container{
-    background-color: rgb(29, 29, 224, 0.5);
+    background-color: rgb(9, 9, 71);
     width: 60%;
     margin: auto;
     padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#add-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#add-task > h1{
+    color: rgba(213, 200, 245);
+    margin: 40px 0px;
+    font-size: 3rem;
+}
+
+#add-task > .text{
+    background-color: rgb(181, 213, 241);
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
