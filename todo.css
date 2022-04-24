@@ -4,15 +4,20 @@
     margin: 0px;  
 }
 
+ul{
+    list-style-type: none;
+}
+
 body{
     padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 }
 
 .container{
-    background-color: rgb(9, 9, 71);
+    background-color: rgb(4, 4, 29);
     width: 60%;
     margin: auto;
     padding: 70px 50px;
@@ -20,6 +25,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 150px 150px 150px 150px;
 }
 
 #add-task{
@@ -29,15 +35,67 @@ body{
 }
 
 #add-task > h1{
-    color: rgba(213, 200, 245);
+    color: rgb(101, 225, 250);
     margin: 40px 0px;
     font-size: 3rem;
+
 }
 
 #add-task > .text{
-    background-color: rgb(181, 213, 241);
+    background-color: rgb(101, 225, 250);
     padding: 20px;
-    border: 2px solid red;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
 
+#add-task > .text > label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#add-task > .text > input{
+    font-size: 1.25rem;
+    /* border: none; */
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+}
+
+#add-task > .text > #task{
+    background-color: rgb(255, 255, 255,0.4);
+    color: rgb(50, 50, 50);
+}
+
+#add-task > .text > #task:focus{
+    background-color: rgba(35, 150, 42, 0.3);
+}
+
+#add-task > .text > #submit{
+    background-color: rgb(4, 4, 29);
+    color: rgb(101, 225, 250);
+}
+
+.container > h1{
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.container > .all-tasks{
+    background-color: aliceblue;
+    padding: 10px 10px;
+    margin-top: 20px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container > .all-tasks li{
+    margin: 10px 0px;
+}
+
+
+.container > .all-tasks > li > form{
+   display: flex;
+   justify-content: space-between;
+}
