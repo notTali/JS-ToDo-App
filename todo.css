@@ -81,8 +81,8 @@ body{
 }
 
 .container > .all-tasks{
-    background-color: aliceblue;
-    padding: 10px 10px;
+    /* background-color: aliceblue; */
+    padding: 10px 00px;
     margin-top: 20px;
     width: 65%;
     display: flex;
@@ -96,6 +96,27 @@ body{
 
 
 .container > .all-tasks > li > form{
+    padding: 20px 15px;
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   /* border: 3px solid red; */
+    background-color: rgb(164, 201, 233);
+    border-radius: 10px;
 }
+
+.container > .all-tasks > li > form input{
+    
+    width: 20px;
+    height: 20px;
+    
+ }
+
+ .container > .all-tasks > li > form label{
+    font-size: 1.5rem;
+ }
+
+ .container > .all-tasks > li > form i{
+    font-size: 2rem;
+    color: rgb(235, 52, 52);
+ }
