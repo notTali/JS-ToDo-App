@@ -2,7 +2,7 @@ const tasks = [
 
 ];
 
-
+const span = document.querySelector("span");
 
 // Form submit event lister
 const addTaskForm = document.getElementById("add-task");
@@ -53,6 +53,7 @@ addTaskForm.addEventListener( 'submit', (event) => {
          icon.addEventListener("click",(event) => {
              tasks.splice(index-1); //Remove task from list
              ul.removeChild(li); // Remove list item.
+             span.innerText = tasks.length; //Update count
          });
      
          // Taks form content.
@@ -68,7 +69,7 @@ addTaskForm.addEventListener( 'submit', (event) => {
          ul.appendChild(li)
 
          // Display the  number of tasks...
-        const span = document.querySelector("span");
+        
         span.innerText = tasks.length;
 
 
@@ -84,6 +85,6 @@ const addTask = (aTask) => {
     
 };
 
-const deleteTask = (aTask) => {
-    tasks
-};
+// const deleteTask = (aTask) => {
+//     tasks
+// };
